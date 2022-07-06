@@ -14,7 +14,7 @@ const baseUri = ""; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 40,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -51,12 +51,12 @@ const CONTRACT_SYMBOL = 'PNT';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x967274381065F080a90181b1540FB880233A0953';
 const TREASURY_ADDRESS = '0x967274381065F080a90181b1540FB880233A0953';
-const MAX_SUPPLY = 20; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 2; // maximum number of NFTs a user can mint in a single transction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-07-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 //YYYY-MM-DD
+const PUBLIC_MINT_START_DATE = "2022-07-14T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 //YYYY-MM-DD
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-07-05T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00 // YYYY-MM-DD
@@ -64,10 +64,10 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x967274381065F080a90181b1540FB880233A0953"; // Address that will receive the royalty
 const BASE_URI = ""; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = "ipfs://bafkreih7s64jofg2erau5bqgbr2e7a4wc36w4bsnqaqbdo2cuvtinircay"; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x04a0c63cC85d1A4013312701074A9991A6355f7a","0x8962105C27A25Fcb2d3D309CdC40Aa65F9B644fb","0xe25A5b04De2B43E07da427f080Ba20cBc615a3Ef","0x967274381065F080a90181b1540FB880233A0953","0x160b9F8F99ea28139De1a0E2173Ac4c6DF41217d"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x04a0c63cC85d1A4013312701074A9991A6355f7a","0x8962105C27A25Fcb2d3D309CdC40Aa65F9B644fb","0xe25A5b04De2B43E07da427f080Ba20cBc615a3Ef","0x967274381065F080a90181b1540FB880233A0953"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0xf1dE50759E3fC9de0D8bB290F4fa3b785FEd45e2"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x095A5D4ea661a465dF8FD82077d1320dD078e7b0"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
