@@ -1,9 +1,9 @@
 const contractAddress = "0x4881a5d631Ac18F375252f708Ce646837165211D"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the BeanBoyz NFT Project!!";
+const welcome_h1 = "Welcome to the Patel NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The BeanBoyz NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection.';
+const welcome_p = 'The Patel NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";

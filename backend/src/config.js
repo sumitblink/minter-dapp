@@ -7,9 +7,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "beanBoyz.xyz";
-const description = "Cool Bean Boys";
-const baseUri = "ipfs://bafybeihwvm5cwcfdhd4cfv3653ugb7bho3z3cgnd4et3axsg6z2wbugjba/"; // This will be replaced automatically
+const namePrefix = "PatelBoys";
+const description = "Cool Patel NFTs";
+const baseUri = ""; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -17,9 +17,9 @@ const layerConfigurations = [
     growEditionSizeTo: 20,
     layersOrder: [
       { name: "Background" },
-      { name: "Bean Body" },
-      { name: "Bean Eye" },
-      { name: "Bean Mouth" },      
+      { name: "Body" },
+      { name: "Head" },
+      { name: "Face" },      
     ],
   },
 ];
@@ -35,7 +35,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://beanboyz.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://Patelboyz.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -46,34 +46,34 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'beanBoyz.xyz';
-const CONTRACT_SYMBOL = 'BBZ';
+const CONTRACT_NAME = 'PatelNft';
+const CONTRACT_SYMBOL = 'PNT';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x967274381065F080a90181b1540FB880233A0953';
 const TREASURY_ADDRESS = '0x967274381065F080a90181b1540FB880233A0953';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 20; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 2; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-06-02T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-07-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 //YYYY-MM-DD
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-05-30T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-07-05T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00 // YYYY-MM-DD
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x967274381065F080a90181b1540FB880233A0953"; // Address that will receive the royalty
-const BASE_URI = "ipfs://bafybeihwvm5cwcfdhd4cfv3653ugb7bho3z3cgnd4et3axsg6z2wbugjba/"; // only update if you want to manually set the base uri
-const PREREVEAL_TOKEN_URI = "ipfs://bafkreicsqfax3lo6sz2yv5twwaf4brl36prne3wgvzr2vrzic77inunr34"; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x8962105C27A25Fcb2d3D309CdC40Aa65F9B644fb","0xe25A5b04De2B43E07da427f080Ba20cBc615a3Ef","0x967274381065F080a90181b1540FB880233A0953","0x160b9F8F99ea28139De1a0E2173Ac4c6DF41217d"]; // only update if you want to manually set the whitelisted addresses
+const BASE_URI = ""; // only update if you want to manually set the base uri
+const PREREVEAL_TOKEN_URI = "ipfs://bafkreih7s64jofg2erau5bqgbr2e7a4wc36w4bsnqaqbdo2cuvtinircay"; // only update if you want to manually set the prereveal token uri
+const PRESALE_WHITELISTED_ADDRESSES = ["0x04a0c63cC85d1A4013312701074A9991A6355f7a","0x8962105C27A25Fcb2d3D309CdC40Aa65F9B644fb","0xe25A5b04De2B43E07da427f080Ba20cBc615a3Ef","0x967274381065F080a90181b1540FB880233A0953","0x160b9F8F99ea28139De1a0E2173Ac4c6DF41217d"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x4881a5d631ac18f375252f708ce646837165211d"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0xf1dE50759E3fC9de0D8bB290F4fa3b785FEd45e2"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "Which bean boy is yours ?"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmRModSr9gQTSZrbfbLis6mw21HycZyqMA3j8YMRD11nAQ"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "Which Patel boy is yours ?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreicdnvfpb2tm2zutqhmwtngdkq3wbof7mjpiqb3xgkpz2mogtj7agq"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
